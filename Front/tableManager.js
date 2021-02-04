@@ -46,15 +46,16 @@ class guiManager {
 
         // Tipo de columna
         newCell = newRow.insertCell(2);
-        cellContent = document.createTextNode(attributeObj["columnType"]);
+        cellContent = document.createTextNode(attributeObj["allowsNull"]);
         newCell.appendChild(cellContent);
 
         // Permite null
         newCell = newRow.insertCell(3);
-        cellContent = document.createTextNode(attributeObj["allowsNull"]);
+        cellContent = document.createTextNode(attributeObj["columnType"]);
         newCell.appendChild(cellContent);
 
     }
+
     resetAttributeForm() {
         this.createAttributeForm.reset();
     }
@@ -79,8 +80,9 @@ class sqlGenerator {
         let attributeStrArr = this.attribute.map(attribute => `${attribute['columnName']} ${attribute['columnType'] } ${ attribute["allowsNull"] ? "" : "NOT NULL"} `)
         attributeStrArr.forEach((val, index) => {
             query += attributeStrArr[index];
-            query += index < attributeStrArr.length - 1 ? " , " : " )";
+            query += index < attributeStrArr.length - 1 ? " , " : " ";
         })
+        query += ")";
         return query;
     }
 }
@@ -108,3 +110,10 @@ function addColumn(event) {
     guiHandler.setActualQuery(sqlHandler.getCreateTableQuery())
     guiHandler.resetAttributeForm();
 }
+
+const createQueryButton = document.getElementById("createTable");
+
+createQueryButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    sqlGenerator.getCreateTableQuery();
+})

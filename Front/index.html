@@ -7,30 +7,36 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="./styles.css" rel="stylesheet">
 </head>
 
-<h1>Tablas actuales en mi base:</h1>
-<div class="tableContainer">
-
-</div>
-
-<div class="tableInfo">
-    <h1 id="tableName">Table name</h1>
-
-    <table class="columnDataTable">
-        <thead>
-            <tr>
-                <th>Nombre de la columna</th>
-                <th>Numero</th>
-                <th>Acepta nulos</th>
-                <th>Tipo</th>
-            </tr>
-        </thead>
-        <tbody class="columnDataTbody"></tbody>
-    </table>
-</div>
 
 <body>
+
+    <div class="fakeMenu">
+        <a href="db-helper.html"> <button type="button" class="btn btn-dark" href="db-helper.html">Crear tabla</button></a>
+    </div>
+
+    <h1>Tablas actuales en mi base:</h1>
+    <div class="tableContainer">
+
+    </div>
+
+    <div class="tableInfo">
+        <h1 id="tableName">Table name</h1>
+        <table class="columnDataTable">
+            <thead>
+                <tr>
+                    <th>Nombre de la columna</th>
+                    <th>Numero</th>
+                    <th>Acepta nulos</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody class="columnDataTbody"></tbody>
+        </table>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 

@@ -7,9 +7,15 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="./styles.css" rel="stylesheet">
 </head>
 
 <body>
+
+    <div class="fakeMenu">
+        <a href="index.html"> <button type="button" class="btn btn-dark" href="db-helper.html">Inicio</button></a>
+    </div>
+
     <h1>Query actual: <span id="actualQuery">____</span></h1>
     <div class="row">
         <div class="col-sm-2">
@@ -59,6 +65,7 @@
                 </thead>
                 <tbody class="columnDataTbody"></tbody>
             </table>
+            <button type="button" class="btn btn-success" id="createTable">Ejecutar query</button>
         </div>
     </div>
 
