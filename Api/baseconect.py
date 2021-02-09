@@ -1,4 +1,4 @@
-bdUser = "expensesapp"
-password = "Yi4acY~5_3gN"
-bdName = "expensesapp"
-host = "den1.mysql5.gear.host"
+bdUser = "managerproject1"
+password = "Ws2eLA!1dD~h"
+bdName = "managerproject1"
+host = "den1.mysql1.gear.host"

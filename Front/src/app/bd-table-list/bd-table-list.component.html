@@ -1,0 +1,7 @@
+<div>
+    <h1>Tablas de la BD:</h1>
+</div>
+<div class="table-preview-container">
+    <app-bd-table-preview *ngFor="let tableNameString of allTableName" [tableName]="tableNameString">
+    </app-bd-table-preview>
+</div>

@@ -7,7 +7,7 @@ app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-@app.route('/api/v1/getAllTables/', methods=['GET'])
+@app.route('/api/v1/AllTables', methods=['GET'])
 @cross_origin()
 def get_all_tables():
 	all_tables = bdDao.get_all_tables()

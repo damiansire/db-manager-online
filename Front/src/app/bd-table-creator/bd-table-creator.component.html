@@ -1,0 +1,19 @@
+<div style="display: flex;justify-content: space-around;">
+    <div>
+        <form [formGroup]="createTableForm">
+
+            <label>
+              Nombre de la tabla:
+            </label>
+
+            <mat-form-field>
+                <mat-label></mat-label>
+                <input placeholder="Nombre de la tabla" formControlName="tableName">
+            </mat-form-field>
+
+        </form>
+    </div>
+    <div>
+        <app-bd-table-list></app-bd-table-list>
+    </div>
+</div>

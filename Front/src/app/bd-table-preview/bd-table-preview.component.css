@@ -1,0 +1,9 @@
+div {
+    border: 2px solid black;
+    padding: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+}
