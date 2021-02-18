@@ -1,0 +1,7 @@
+.all-option-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 5%;
+}
+
+.option-button {}

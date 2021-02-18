@@ -4,6 +4,7 @@ import { BdTableCreatorComponent } from './bd-table-creator/bd-table-creator.com
 import { PrincipalComponent } from './principal/principal.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path:  'home', component: PrincipalComponent },
   { path:  'createTable', component:  BdTableCreatorComponent }
 ];

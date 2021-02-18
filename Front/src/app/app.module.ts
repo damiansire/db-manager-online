@@ -19,6 +19,9 @@ import {MatButtonModule} from '@angular/material/button';
 import { PrincipalComponent } from './principal/principal.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { TableOptionComponent } from './table-option/table-option.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { CreateTableFormComponent } from './create-table-form/create-table-form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BdConnectionFormComponent,
     BdTableCreatorComponent,
     OptionsComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    TableOptionComponent,
+    CreateTableFormComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatIconModule,
     MatButtonModule,
     ReactiveFormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

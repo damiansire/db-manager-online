@@ -1,0 +1,22 @@
+<h1> Este es un formulario para crear columnas</h1>
+
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+
+    <label>
+      Colum Name:
+      <input type="text" formControlName="columnName">
+    </label>
+
+    <label>
+      Type:
+      <input type="text" formControlName="type">
+    </label>
+
+    <label>
+        isNull:
+        <input type="text" formControlName="isNull">
+    </label>
+
+    <button>Guardar</button>
+
+</form>
